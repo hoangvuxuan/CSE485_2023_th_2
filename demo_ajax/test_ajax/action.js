@@ -10,12 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
          
         aj.onreadystatechange = function() {
             if (aj.readyState == 4 && aj.status == 200) {
-                alert("ggdfgf");
+                
                 showComments();
                 
                 document.getElementById('commentForm').reset();
                 document.getElementById('commentId').value = '0';
-                //document.getElementById('message').innerHTML = response.message;
+              
+                document.getElementById('message').innerHTML = response.message;
                 
             }
         };
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function showComments() {
-    alert("fuck");
+   
 	var aj = new XMLHttpRequest();
 
     aj.onreadystatechange = function() {

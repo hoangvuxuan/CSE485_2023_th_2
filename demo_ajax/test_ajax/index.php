@@ -22,7 +22,8 @@
 			<input type="hidden" name="commentId" id="commentId" value="0" />
 			<input type="submit" name="submit" id="submit" class="btn btn-primary" value="Post Comment" />
 		</div>
-	</form>		
+	</form>	
+	<span id="message"></span>	
     <div id="showComments"></div>  
 </div>	
  
