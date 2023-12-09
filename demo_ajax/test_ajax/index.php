@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+
 <div class="container">		
 	<h2>Example: Comment System with Ajax, PHP & MySQL</h2>		
 	<form method="POST" id="commentForm" action = "comment.php">
@@ -17,13 +18,17 @@
 		<div class="form-group">
 			<textarea name="comment" id="comment" class="form-control" placeholder="Enter Comment" rows="5" required></textarea>
 		</div>
-		<span id="message"></span>
+		<!-- <span id="message"></span> -->
 		<div class="form-group">
 			<input type="hidden" name="commentId" id="commentId" value="0" />
 			<input type="submit" name="submit" id="submit" class="btn btn-primary" value="Post Comment" />
 		</div>
 	</form>	
-	<span id="message"></span>	
+	<div>
+		<span id="message"></span>
+		<span id = "demo"></span>
+	</div>
+		
     <div id="showComments"></div>  
 </div>	
  
